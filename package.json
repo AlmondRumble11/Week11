@@ -1,0 +1,26 @@
+{
+    "name": "week11",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "install": "cd client && npm install",
+        "dev:client": "cd client && npm start",
+        "preinstall": "cd server && npm install",
+        "dev:server": "cd server && npm run dev",
+        "build": "cd client && npm run build",
+        "start": "cd server && npm start"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/AlmondRumble11/Week11.git"
+    },
+    "author": "jesse mustonen",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/AlmondRumble11/Week11/issues"
+    },
+    "homepage": "https://github.com/AlmondRumble11/Week11#readme",
+    "proxy": "http://localhost:1234"
+
+}
