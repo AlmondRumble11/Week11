@@ -32,16 +32,16 @@ app.use('/api', apiRouter);
 app.use('/book', bookRouter);
 
 
-//if (process.env.NODE_ENV === "production") {
-//   app.use(express.static(path.resolve("..", "client", "build")));
-//  app.get('*', (req, res) => res.sendFile(path.resolve("..", "client", "build", "index.html")));
-//} else if (process.env.NODE_ENV === "development") {
-var corsOptions = {
-    origin: "http://localhost:3000",
-    optionsSuccessStatus: 200
+if (process.env.NODE_ENV === "production") {
+    app.use(express.static(path.resolve("..", "client", "build")));
+    app.get('*', (req, res) => res.sendFile(path.resolve("..", "client", "build", "index.html")));
+} else if (process.env.NODE_ENV === "development") {
+    var corsOptions = {
+        origin: "http://localhost:3000",
+        optionsSuccessStatus: 200
+    }
+    app.use(cors(corsOptions));
 }
-app.use(cors(corsOptions));
-//}
 
 
 module.exports = app;
