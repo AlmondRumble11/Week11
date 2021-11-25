@@ -19,6 +19,7 @@ function Book() {
     return (
         <div>
            
+            <h1>{book.err}</h1>
             <h1>{book.msg}</h1>
             <p>{book.name}</p>
             <p>{book.author}</p>

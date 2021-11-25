@@ -28,7 +28,7 @@ router.get('/book/:bookname', (req, res, next) => {
         console.log(book);
         if (book.length == 0) {
             console.log("no book found");
-            return res.status(404).json({ msg: "404: This is not the webpage you are looking for" });
+            return res.status(404).json({ err: "404", msg: "This is not the webpage you are looking for" });
         } else {
             console.log("book found");
             return res.json(book[0]);
