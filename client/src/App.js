@@ -43,10 +43,10 @@ function App() {
       <div className="App">
         <h1>Books</h1>
         <form onSubmit={submit} onChange={change}>
-                  <input type="text" name="name" placeholder="book name"/>
-                  <input type="text" name="author"  placeholder="book author"/>
-                  <input type="number" name="pages"  placeholder="book pages"/>
-                  <input type="submit"/>
+                  <input type="text" name="name" id="name" placeholder="book name"/>
+                  <input type="text" name="author"  id="author" placeholder="book author"/>
+                  <input type="number" name="pages"  id="pages" placeholder="book pages"/>
+                  <input type="submit" id="submit"/>
         </form>
 
       </div>
