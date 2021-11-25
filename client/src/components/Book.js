@@ -19,11 +19,10 @@ function Book() {
     return (
         <div>
            
-            <h1>{book.err}</h1>
-            <h1>{book.msg}</h1>
-            <p>{book.name}</p>
-            <p>{book.author}</p>
-            <p>{book.pages}</p>
+    
+            <p id="name">{book.name}</p>
+            <p id="author">{book.author}</p>
+            <p id="pages"> {book.pages}</p>
         </div>
     )
 }

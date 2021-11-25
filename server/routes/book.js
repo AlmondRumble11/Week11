@@ -3,23 +3,8 @@ var router = express.Router();
 const Books = require("../models/Books");
 const mongoose = require("mongoose");
 
-router.post('/api/book/', (req, res, next) => {
-    console
-    console.log(req.body);
-    //return res.send("ok");
-    Books.create({
-        name: req.body.name,
-        author: req.body.author,
-        pages: req.body.pages
-    }, (err, ok) => {
-        if (err) throw err;
-        return res.send('ok');
-    });
 
-
-});
-
-router.get('/book/:bookname', (req, res, next) => {
+router.get('/:bookname', (req, res, next) => {
     console.log(req.params);
     console.log("in here");
     Books.find({ name: req.params.bookname }, (err, book) => {
