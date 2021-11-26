@@ -29,7 +29,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 app.use('/api', apiRouter);
-app.use('/book', bookRouter);
+app.use('/books', bookRouter);
 
 
 if (process.env.NODE_ENV === "production") {
