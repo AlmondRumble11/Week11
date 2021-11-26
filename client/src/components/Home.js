@@ -35,8 +35,8 @@ function Book() {
 
     return ( 
         <form onSubmit={submit} onChange={change}>
-        <input type="text" name="name" id="name" placeholder="book name"/>
-        <input type="text" name="author"  id="author" placeholder="book author"/>
+        <input type="string" name="name" id="name" placeholder="book name"/>
+        <input type="string" name="author"  id="author" placeholder="book author"/>
         <input type="number" name="pages"  id="pages" placeholder="book pages"/>
         <input type="submit" id="submit"/>
         </form>
